@@ -11,7 +11,7 @@ que se encontra [nesse link](https://github.com/br-adriel/nlw-setup-server).
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
-# Executando a aplicação
+## Executando a aplicação
 
 Para executar a aplicação em modo de desenvolvimento ligar o servidor backend e em seguida
 rodar o comando `npm run dev` na raíz do projeto web.
