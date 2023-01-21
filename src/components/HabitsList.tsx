@@ -63,17 +63,17 @@ const HabitsList = ({ date, onCompletedChanged }: Props) => {
         return (
           <Checkbox.Root
             key={habit.id}
-            className='flex items-center gap-3 group'
+            className='flex items-center gap-3 group  hover:border-violet-300 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-600 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:rounded-lg'
             checked={habitsInfo.completedHabits.includes(habit.id)}
             disabled={isDateInThePast}
             onCheckedChange={() => handleToggleHabit(habit.id)}
           >
-            <div className='h-8 w-8 rounded-lg flex justify-center items-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 group-data-[state=checked]:border-green-500'>
+            <div className='h-8 w-8 rounded-lg flex justify-center items-center bg-zinc-900 border-2 border-zinc-800 group-data-[state=checked]:bg-green-500 group-data-[state=checked]:border-green-500 transition-colors'>
               <Checkbox.Indicator>
                 <Check size={20} color='#fff' />
               </Checkbox.Indicator>
             </div>
-            <span className='font-semibold text-xl text-white leading-tight group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc-400'>
+            <span className='font-semibold text-xl text-white leading-tight group-data-[state=checked]:line-through group-data-[state=checked]:text-zinc-400 transition-all'>
               {habit.title}
             </span>
           </Checkbox.Root>

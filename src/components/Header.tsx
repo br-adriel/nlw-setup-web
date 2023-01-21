@@ -11,7 +11,7 @@ const Header = () => {
       <Dialog.Root>
         <Dialog.Trigger
           type='button'
-          className='border border-violet-500 font-semibold rounded-lg px-6 py-4 flex items-center gap-3 hover:border-violet-300'
+          className='border border-violet-500 font-semibold rounded-lg px-6 py-4 flex items-center gap-3 hover:border-violet-300 transition-colors focus:outline-none focus:ring-2 focus:ring-violet-600 focus:ring-offset-2 focus:ring-offset-background'
         >
           <Plus size={20} className='text-violet-500' />
           Novo hábito
@@ -20,7 +20,7 @@ const Header = () => {
         <Dialog.Portal>
           <Dialog.Overlay className='w-screen h-screen bg-black/80 fixed inset-0 overflow-y-auto flex justify-center items-start'>
             <Dialog.Content className='relative top-0 left-0 p-10 bg-zinc-900 rounded-2xl w-full max-w-md my-4'>
-              <Dialog.Close className='absolute right-10 top-11 text-zinc-400 hover:text-zinc-200'>
+              <Dialog.Close className='absolute right-10 top-11 text-zinc-400 hover:text-zinc-200 focus:outline-none focus:ring-2 focus:ring-violet-600 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:rounded-lg'>
                 <X size={24} aria-label='Fechar' />
               </Dialog.Close>
               <Dialog.Title className='text-3xl leading-tight font-bold'>
