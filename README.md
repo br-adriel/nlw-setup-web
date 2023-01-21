@@ -13,5 +13,9 @@ que se encontra [nesse link](https://github.com/br-adriel/nlw-setup-server).
 
 ## Executando a aplicação
 
-Para executar a aplicação em modo de desenvolvimento ligar o servidor backend e em seguida
-rodar o comando `npm run dev` na raíz do projeto web.
+Para executar a aplicação você precisará do [Node js e do NPM](https://nodejs.org/en/).
+
+Abra o projeto no terminal e instale as dependências com o comando `npm i`.
+
+Para executar a aplicação em modo de desenvolvimento ligue o servidor backend e em seguida
+rode o comando `npm run dev` na raíz do projeto web.
